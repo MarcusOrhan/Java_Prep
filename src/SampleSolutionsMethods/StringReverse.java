@@ -1,5 +1,9 @@
 package SampleSolutionsMethods;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class StringReverse {
 //reverse string with for loop
     public static String reverseString(String str) {
@@ -21,6 +25,22 @@ public class StringReverse {
     public void charReverse(char[] letters, int size){
         for (int i = letters.length-1; i >= 0 ; i--){
         System.out.print(letters[i]);
+        }
+    }
+
+    //ReverseString ArrayList-Iterator
+    public static void reverseStringArrayListIterator(String input){
+        List<Character> arrList= new ArrayList<>();
+        for(char c:input.toCharArray()){
+            arrList.add(c);
+            Collections.reverse(arrList);
+
+            Object[] arr2 = arrList.toArray();
+            String reverse="";
+            for(int i = 0; i <arr2.length; i++) {
+                reverse += arr2[i];
+            }
+            System.out.println(reverse);
         }
     }
 
