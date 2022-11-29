@@ -29,7 +29,7 @@ public class StringReverse {
     }
 
     //ReverseString ArrayList-Iterator
-    public static void reverseStringArrayListIterator(String input){
+    public static String reverseStringArrayListIterator(String input){
         List<Character> arrList= new ArrayList<>();
         for(char c:input.toCharArray()){
             arrList.add(c);
@@ -41,6 +41,7 @@ public class StringReverse {
                 reverse += arr2[i];
             }
             System.out.println(reverse);
+            return reverse;
         }
     }
 
