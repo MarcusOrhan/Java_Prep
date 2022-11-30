@@ -17,4 +17,18 @@ public class Palindrome {
            System.out.println( str + " is Not a Palindrome");
        }
     }
+
+    public static boolean isPalindromeCharAt(String str){
+        int head = 0;
+        int tail = str.length() - 1;
+        while (head < tail) {
+            if (str.charAt(head) != str.charAt(tail)) {
+                return false;
+            }
+            head++;
+            tail--;
+        }
+        return true;
+
+    }
 }
