@@ -29,20 +29,22 @@ public class StringReverse {
     }
 
     //ReverseString ArrayList-Iterator
-    public static String reverseStringArrayListIterator(String input){
-        List<Character> arrList= new ArrayList<>();
-        for(char c:input.toCharArray()){
+    public static String reverseStringArrayListIterator(String input) {
+        List<Character> arrList = new ArrayList<>();
+        String reverse = null;
+        for (char c : input.toCharArray()) {
             arrList.add(c);
             Collections.reverse(arrList);
 
             Object[] arr2 = arrList.toArray();
-            String reverse="";
-            for(int i = 0; i <arr2.length; i++) {
+            reverse = "";
+            for (int i = 0; i < arr2.length; i++) {
                 reverse += arr2[i];
             }
             System.out.println(reverse);
-            return reverse;
+
         }
+        return reverse;
     }
 
 }
