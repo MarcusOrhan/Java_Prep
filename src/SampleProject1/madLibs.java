@@ -7,30 +7,43 @@ public class madLibs {
         System.out.println("Enter an Adjective: ");
         Scanner scanner = new Scanner(System.in);
         String place1 = scanner.next();
+
         System.out.println("Enter another Adjective: ");
         String family = scanner.next();
+
         System.out.println("Enter a Noun: ");
         String noun = scanner.next();
+
         System.out.println("Enter another Noun: ");
         String noun2 = scanner.next();
+
         System.out.println("Enter Plural Noun: ");
         String plural_noun = scanner.next();
+
         System.out.println("Enter a Game: ");
         String game = scanner.next();
+
         System.out.println("Enter a VERB ENDING IN “ING” ");
         String verb1 = scanner.next();
+
         System.out.println("Enter another VERB ENDING IN “ING” ");
         String verb2 = scanner.next();
+
         System.out.println("Enter a VERB ENDING IN “ING” ");
         String verb3 = scanner.next();
+
         System.out.println("Enter a noun ");
         String noun3 = scanner.next();
+
         System.out.println("Enter a PLANT ");
         String plant = scanner.next();
+
         System.out.println("Enter a PART OF BODY ");
         String bodyPart = scanner.next();
+
         System.out.println("Enter an ADJECTIVE ");
         String adjective = scanner.next();
+
         System.out.println("Enter a NUMBER");
         int number = scanner.nextInt();
 
@@ -56,5 +69,4 @@ public class madLibs {
                 "year making enough "+plural_noun+" to pay for the vacation.";
         System.out.println("text = " + text);
     }
-
 }
