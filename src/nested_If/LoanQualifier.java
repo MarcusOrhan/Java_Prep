@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class LoanQualifier {
     public static void main(String[] args) {
        //initialize known
-        int requiredSalary = 30000;
-        int requiredYears = 2;
+        int requiredSalary = 60000;
+        int requiredYears = 5;
         //get unknown
         System.out.println("Enter your salary:");
         Scanner scan = new Scanner(System.in);
