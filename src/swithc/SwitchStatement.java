@@ -26,7 +26,8 @@ public class SwitchStatement {
                 break;
             case "C":
                 message = "Good Job";
-                case "D" :
+                break;
+            case "D" :
                 message = "You need improvement ";
                 break;
             case "F":
