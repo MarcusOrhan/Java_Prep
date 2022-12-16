@@ -45,18 +45,21 @@ Then my program would know that, okay quarters are worth 25 cents. There's 4 of 
         int numOfQuarters = scan.nextInt();
         System.out.println("How many Loonies?: ");
         int numOfLoonies = scan.nextInt();
-        System.out.println("How many Toonies?: ");
-        int numOfToonies = scan.nextInt();
+        // System.out.println("How many Toonies?: ");
+        // int numOfToonies = scan.nextInt();
         scan.close();
 
         double total = numOfPennies*penny + numOfNickels *nickel + numOfDimes*dime + numOfLoonies*looney ;
-        if (total <tooney){
-            System.out.println("Sorry you are short of  $" + (tooney - total) + "");
+
+        if (total < tooney){
+            double amountShort = tooney - total;
+            System.out.println("Sorry you are short of  $" + String.format ("%.2f", amountShort) + " cents buddy.");
         }
          else if (total>tooney) {
-            System.out.println("Sorry hou have "+(total-tooney)+"cents more");
+             double amountOver = total -tooney;
+            System.out.println("Sorry hou have "+ String.format("%.3f",amountOver)+" cents more");
         }else
-                System.out.println("You win! your total change = " + total);
+                System.out.println("You win! your total change = exactly $" + total);
 
     }
 }
