@@ -9,12 +9,12 @@ public class LogicalOperationsRelationalOp {
 How many numOfNickels would you like?
 How many dimes?
 And then, how many quarters?
+And then, how many loonies?
 What your program is going to do is count up the value of all of the change that they answered.
 
-If it's exactly one dollar then they win the game.
-If it's more than one dollar, then you need to tell them that it's more than one dollar and how much they went over.
-If it's less than one dollar, tell them how much they went under.
-Feel free to change this game for your country's currency, so if you don't use dollars and you use something else that's fine.
+If it's exactly one 2 dollars then they win the game.
+If it's more than one 2 dollars, then you need to tell them that it's more than one dollar and how much they went over.
+If it's less than one 2 dollars, tell them how much they went under.
 
 So, for an example of this let's say that I ask the user:
 
@@ -35,9 +35,9 @@ Then my program would know that, okay quarters are worth 25 cents. There's 4 of 
 
         System.out.println("Welcome to 'Change for a Dollar'! " +
                 "Your goal is to enter enough change to make exactly $2.00");
-        System.out.println("How many numOfPennies- 1C?: ");
+        System.out.println("How many Pennies- 1C?: ");
         int numOfPennies = scan.nextInt();
-        System.out.println("How many numOfNickels 5C?: ");
+        System.out.println("How many Nickels 5C?: ");
         int numOfNickels = scan.nextInt();
         System.out.println("How many dimes- 10c?: ");
         int numOfDimes = scan.nextInt();
@@ -45,18 +45,21 @@ Then my program would know that, okay quarters are worth 25 cents. There's 4 of 
         int numOfQuarters = scan.nextInt();
         System.out.println("How many Loonies?: ");
         int numOfLoonies = scan.nextInt();
-        System.out.println("How many Toonies?: ");
-        int numOfToonies = scan.nextInt();
+        // System.out.println("How many Toonies?: ");
+        // int numOfToonies = scan.nextInt();
         scan.close();
 
-        double total = numOfPennies*penny + numOfNickels *nickel + numOfDimes*dime + numOfLoonies*looney ;
-        if (total <tooney){
-            System.out.println("Sorry you are short of  $" + (tooney - total) + "");
+        double total = numOfPennies*penny + numOfNickels *nickel + numOfDimes*dime + numOfQuarters*quarter + numOfLoonies*looney ;
+
+        if (total < tooney){
+            double amountShort = tooney - total;
+            System.out.println("Sorry you are short of  $" + String.format ("%.2f", amountShort) + " cents buddy.");
         }
          else if (total>tooney) {
-            System.out.println("Sorry hou have "+(total-tooney)+"cents more");
+             double amountOver = total -tooney;
+            System.out.println("Sorry hou have "+ String.format("%.3f",amountOver)+" cents over");
         }else
-                System.out.println("You win! your total change = " + total);
+                System.out.println("You win! your total change = exactly $" + total);
 
     }
 }
