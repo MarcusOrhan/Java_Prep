@@ -1,6 +1,7 @@
 package arrays;
 
 public class MultiDimensionArray {
+
     public static void main(String[] args) {
         String[][] sehirler = new String[3][3];
 
@@ -18,8 +19,4 @@ public class MultiDimensionArray {
             for(int j = 0; j<=2; j++){
                 System.out.println(sehirler[i][j]);
             }
-        }
-
-
-    }
 }
