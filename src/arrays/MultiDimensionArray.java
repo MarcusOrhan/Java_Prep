@@ -14,9 +14,11 @@ public class MultiDimensionArray {
         sehirler[2][0] = "Adana";
         sehirler[2][1] = "Hatay";
         sehirler[2][2] = "Oamaniye";
-        for(int i = 0; i<= sehirler.length-1;i++){
+        for (int i = 0; i <= sehirler.length - 1; i++) {
             System.out.println("*******======================******");
-            for(int j = 0; j<=2; j++){
+            for (int j = 0; j <= 2; j++) {
                 System.out.println(sehirler[i][j]);
             }
+        }
+    }
 }
