@@ -9,7 +9,7 @@ public class Square {
         int number = read.nextInt();
         for (int i = 0; i < number; i++) {
   for(int j=0;j<=number;j++){
-      System.out.print("* ");// print astarisk row = columns
+      System.out.print("* ");// print asterisk row = columns
   }
             System.out.println();// end of each row
         }
