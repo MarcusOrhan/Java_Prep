@@ -2,15 +2,15 @@ package value_and_reference_types;
 
 public class MainC {
     public static void main(String[] args) {
-
+// Classes are REFERENCE TYPE!!! Stack=varName ===> var value,Heap=000101 (ref no);
             CustomerManager customerManager = new CustomerManager();
             CustomerManager customerManager2 = new CustomerManager();
-            customerManager = customerManager2;
+            customerManager2=customerManager ; //  Garbage Collector removes customerManager because heap no reference for cM anymore
        customerManager.Add();
       customerManager.Remove();
       customerManager.Update();
 
-//Primitive data types - Value
+//Primitive data types - Value     Stack=varName and value ===> heap no ref
             int sayi1 = 10;
             int sayi2 = 20;
             sayi2 = sayi1;
