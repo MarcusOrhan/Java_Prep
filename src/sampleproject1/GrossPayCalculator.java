@@ -1,4 +1,4 @@
-package sampleproject1;
+package SampleProject1;
 
 import java.util.Scanner;
 
