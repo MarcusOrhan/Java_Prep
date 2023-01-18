@@ -7,6 +7,7 @@ package abstractClasses;
 //abstract methods in an abstract class must be OVERRIDDEN in all extended (inherited) classes
 // cannot create abs =new (); never! @override annotation
 //abstract methods in abstract class are compulsory  to override for all extended classes
+//abstract methods() must be in abstract Classes
 public class Main {
     public static void main(String[] args) {
 MaleGameCalculator maleGameCalculator = new MaleGameCalculator();
@@ -19,8 +20,6 @@ maleGameCalculator.gameOver();
       //  GameCalcculator gameCalculator = new ElderlyGameCalculator();
         GameCalculator gameCalculator = new KidsGameCalculator();
         gameCalculator.hesapla();
-
-
 
     }
 
