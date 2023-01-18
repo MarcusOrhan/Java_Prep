@@ -1,4 +1,8 @@
 package abstractClasses;
 
-public class KidsGameCalculator extends GameCalcculator{
+public class KidsGameCalculator extends GameCalculator{
+    @Override
+    public void hesapla() {
+        System.out.println("puaniniz  105");
+    }
 }
