@@ -17,7 +17,7 @@ public class StringReverse {
     public static String reverseSB(String str) {
         String reverse_sb = "";
         StringBuilder sb = new StringBuilder(str);
-        System.out.println(sb.reverse());
+        System.out.print(sb.reverse());
         reverse_sb = sb.reverse().toString();
         return reverse_sb;
     }
