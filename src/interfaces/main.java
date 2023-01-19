@@ -5,7 +5,6 @@ public class main {
         // ICustomerDal customerDal = new MySqlCustomerDal();
         // customerManager.customerDal = new OracleCustomerDal();
 CustomerManager customerManager = new CustomerManager(new MySqlCustomerDal());
-
 customerManager.add();
     }
 }
