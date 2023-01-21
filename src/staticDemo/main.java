@@ -8,5 +8,8 @@ public class main {
         product.name = "Wireless Mouse";
         product.price= 10;
         manager.add(product);
+        DatabaseHelper.Crud.delete();
+        DatabaseHelper.Connection.createC0nnection();
     }
 }
+//inner classes are not suggested, not best practice. increase dependency to a class SOLID (Singel class does single responsibilith
