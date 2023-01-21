@@ -12,4 +12,4 @@ public class main {
         DatabaseHelper.Connection.createC0nnection();
     }
 }
-//inner classes are not suggested, not best practice. increase dependency to a class
+//inner classes are not suggested, not best practice. increase dependency to a class SOLID (Singel class does single responsibilith
