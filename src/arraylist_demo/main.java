@@ -13,7 +13,6 @@ public class main {
         numbers.set(2,42);
 //        numbers.remove(0);
 //        numbers.clear();
-        
         for(Object i:numbers){
             System.out.println("i = " + i);
         }
