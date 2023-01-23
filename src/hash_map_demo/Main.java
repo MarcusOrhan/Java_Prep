@@ -14,9 +14,7 @@ public class Main {
              ) {
             System.out.println("item = " + item+ ", Value = "+sozluk.get(item));
         }
-
         sozluk.remove("Book");
-
         System.out.println("sozluk = " + sozluk.get("Booklet"));
         System.out.println( sozluk.get("Book"));//null
     }
