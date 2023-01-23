@@ -11,10 +11,10 @@ public class main {
         } catch (ArrayIndexOutOfBoundsException exeption) {
             System.out.println(" Hata olustu; fakat program calismaya devam edecek");
             System.out.println(" Logged exeption = " + exeption);
-            //There may be morethan one catch block
+            //There may be more than one catch block
         } catch (StringIndexOutOfBoundsException exception) {
-            System.out.println("String Logged exeption = " + exception);
-        } catch (Exception exception) {
+            System.out.println("String Logged exception = " + exception);
+        } catch (Exception exception) { // Parent class of all exceptions
             System.out.println(" Logged = " + exception);
         } finally {
             System.out.println("Finally block her iki durumda da (try or catch) calisir");
