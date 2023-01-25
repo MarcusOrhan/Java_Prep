@@ -26,6 +26,7 @@ getFileInfo();
         File file = new File("C:\\Users\\glnsb\\Desktop\\mesut\\students.txt");
         if(file.exists()){
             System.out.println("file name : " + file.getName());
+            System.out.println("file path : " + file.getAbsolutePath());
         }
     }
 
