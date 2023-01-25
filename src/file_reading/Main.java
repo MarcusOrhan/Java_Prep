@@ -1,12 +1,15 @@
 package file_reading;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
 getFileInfo();
+readFile();
     }
 
     public static void createFile(){
@@ -31,6 +34,23 @@ getFileInfo();
             System.out.println("can file writable - dosya yazilabilir  : " + file.canWrite());
             System.out.println("file name size - dosya boyutu: (Byte) " + file.length());
         }
+    }
+
+    public static void readFile(){
+        File file = new File("C:\\Users\\glnsb\\Desktop\\mesut\\students.txt");
+
+        try {
+            Scanner reader = new Scanner(file);
+            while (reader.hasNextLine()){
+                String line = reader.nextLine();
+                System.out.println("line = " + line);
+                reader.close();
+            }
+        } catch (FileNotFoundException e) {
+           e.printStackTrace();
+        }
+
+
     }
 
 }
