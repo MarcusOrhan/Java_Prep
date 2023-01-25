@@ -25,8 +25,11 @@ getFileInfo();
     public static void getFileInfo(){
         File file = new File("C:\\Users\\glnsb\\Desktop\\mesut\\students.txt");
         if(file.exists()){
-            System.out.println("file name : " + file.getName());
-            System.out.println("file path : " + file.getAbsolutePath());
+            System.out.println("file name- dosya adi: " + file.getName());
+            System.out.println("file path - dosya yolu: " + file.getAbsolutePath());
+            System.out.println("can file readable - dosya okunabilir : " + file.canRead());
+            System.out.println("can file writable - dosya yazilabilir  : " + file.canWrite());
+            System.out.println("file name size - dosya boyutu: (Byte) " + file.length());
         }
     }
 
