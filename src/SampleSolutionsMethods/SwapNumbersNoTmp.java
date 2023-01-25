@@ -7,6 +7,7 @@ public class SwapNumbersNoTmp {
         int b = 3;
         System.out.println("b= " + b+ ";   a= "+a);
         b = (a+b)-(a=b);
+        // b=  103 - 3 a=b3
         System.out.println("b NEW= " + b + "\na NEW= "+a);
 
     }
