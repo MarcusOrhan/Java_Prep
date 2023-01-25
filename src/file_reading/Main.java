@@ -9,6 +9,8 @@ public class Main {
         try {
            if (file.createNewFile()) {
                System.out.println("Dosya olusturuldu");
+           }else{
+               System.out.println("Dosya olusturulamadi Maalesf yaadu");
            }
         } catch (IOException e) {
             throw new RuntimeException(e);
