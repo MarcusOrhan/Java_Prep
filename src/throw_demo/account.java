@@ -9,14 +9,14 @@ public class account {
         System.out.println("Hesapta olan para :   $"+ manager.getBalance());
         try {
             manager.withdraw(200);
-        } catch (Exception e) {
+        } catch (BalanceInsufficientException e) {
             System.out.println("e = " + e.getMessage());
         }
         System.out.println("Hesapta olan para :   $"+ manager.getBalance());
         try{
             manager.withdraw(4200);
         }catch
-            (Exception exception){
+            (BalanceInsufficientException exception){
             System.out.println(exception.getMessage());
         }
         System.out.println("Hesapta olan para :   $"+ manager.getBalance());
