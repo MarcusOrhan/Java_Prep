@@ -3,8 +3,13 @@ package throw_demo;
 public class AccountManager {
     private double balance;
 
-    @Override
-    public int hashCode() {
-        return super.hashCode();
+  AccountManager manager = new AccountManager();
+
+    public AccountManager getManager() {
+        return manager;
+    }
+
+    public void setManager(AccountManager manager) {
+        this.manager = manager;
     }
 }
