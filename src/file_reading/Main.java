@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
 
-
+getFileInfo();
     }
 
     public static void createFile(){
@@ -21,4 +21,12 @@ public class Main {
             e.printStackTrace();
         }
     }
+
+    public static void getFileInfo(){
+        File file = new File("C:\\Users\\glnsb\\Desktop\\mesut\\students.txt");
+        if(file.exists()){
+            System.out.println("file name : " + file.getName());
+        }
+    }
+
 }
