@@ -9,7 +9,7 @@ public void withdraw(double amount) throws Exception {
     if (balance>= amount){
         balance = getBalance() - amount;
     }else {
-       throw new Exception( "Hesaptan para cekilemedi, Yetersiz bakiye Exception");
+       throw new BalanceInsufficientException( "Hesaptan para cekilemedi, Yetersiz bakiye Exception");
     }
 
 }
