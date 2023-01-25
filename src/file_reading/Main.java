@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-getFileInfo();
+//getFileInfo();
 readFile();
     }
 
@@ -44,8 +44,8 @@ readFile();
             while (reader.hasNextLine()){
                 String line = reader.nextLine();
                 System.out.println("line = " + line);
-                reader.close();
             }
+            reader.close();
         } catch (FileNotFoundException e) {
            e.printStackTrace();
         }
