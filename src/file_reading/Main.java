@@ -7,7 +7,9 @@ public class Main {
     public static void main(String[] args) {
         File file = new File("Users\\glnsb\\Desktop\\mesut\\students.txt");
         try {
-            file.createNewFile();
+           if (file.createNewFile()) {
+               System.out.println("Dosya olusturuldu");
+           }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
