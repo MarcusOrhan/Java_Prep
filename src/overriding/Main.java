@@ -11,6 +11,7 @@ public class Main {
             System.out.println(krediManager+"'nin kredi tutari :"+ krediManager.hesapla(1000));
 
         }
-
+AskerKrediManager askerKredi = new AskerKrediManager();
+        System.out.println(" Kredi tutariniz = " + askerKredi.hesapla(4200) );
     }
 }
