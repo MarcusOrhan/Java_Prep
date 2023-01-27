@@ -23,7 +23,7 @@ public class main {
             try {
                 reader.close(); // added IO exception to Method signature by  throws or reader.close() wrapped in try  catch in finally
             } catch (IOException e) {
-                throw new RuntimeException(e);
+              e.printStackTrace();
             }
         }
     }
