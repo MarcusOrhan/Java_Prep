@@ -44,4 +44,7 @@ public class leapYear {
     public static String isLeapYearTernary(int year) {
         return (year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ?year +" is a LEAP year.":year+ " is NOT a LEAP year!");
     }
+
+    // new comment to stashc
+
 }
