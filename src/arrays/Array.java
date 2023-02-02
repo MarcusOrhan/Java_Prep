@@ -5,4 +5,5 @@ public class Array {
         String []arr;
         arr= new String[]{"ali", "veli", "deli"};
     }
+
 }
