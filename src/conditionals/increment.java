@@ -1,3 +1,5 @@
+package conditionals;
+
 public class increment {
     public static void main(String[] args) {
         int x = 4, y = 3, z = 2;
