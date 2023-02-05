@@ -23,3 +23,4 @@ public class CustomerDal implements IEntityRepository<Customer> {
 
     }
 }
+//Generic Constraints
