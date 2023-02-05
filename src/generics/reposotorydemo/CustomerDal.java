@@ -1,25 +1,25 @@
 package generics.reposotorydemo;
 
-import generics.Customer;
+public class CustomerDal implements IEntityRepository<Customer> {
 
-public class CustomerDal implements IEntityRepository {
+
     @Override
-    public void add(Object entitiy) {
+    public void add(Customer entitiy) {
 
     }
 
     @Override
-    public void update(Object entitiy) {
+    public void update(Customer entitiy) {
 
     }
 
     @Override
-    public void delete(Object entitiy) {
+    public void delete(Customer entitiy) {
 
     }
 
     @Override
-    public void remove(Object entitiy) {
+    public void remove(Customer entitiy) {
 
     }
 }
