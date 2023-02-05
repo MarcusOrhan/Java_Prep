@@ -1,4 +1,4 @@
 package generics.reposotorydemo;
 
-public class Customer {
+public class Customer implements IEntity{
 }
