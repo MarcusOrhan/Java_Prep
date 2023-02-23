@@ -2,10 +2,10 @@ package SampleSolutionsMethods;
 
 public class PrimeNumber {
     public static void main(String[] args) {
-
-      //  checkPrime(6);
-        isPrime(22);
+        // checkPrime(4);
+        isPrime(4);
     }
+
     public static boolean checkPrime(int n) {
         if (n <= 1) {
             return false;
@@ -19,9 +19,9 @@ public class PrimeNumber {
         System.out.println(n +" is a prime number ");
         return true; }
 
-    public static void isPrime(int number) {
+    public static void isPrime(int num) {
         int i,m=0,flag=0;
-        int n=number;//it is the number to be checked
+        int n=num;//it is the number to be checked
         m=n/2;
         if(n==0||n==1){
             System.out.println(n+" is not prime number");
