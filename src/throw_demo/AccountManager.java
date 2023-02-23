@@ -14,7 +14,17 @@ public void withdraw(double amount) throws BalanceInsufficientException {
 
 }
 
+
+  AccountManager manager = new AccountManager();
+
+    public AccountManager getManager() {
+        return manager;
+    }
+
+    public void setManager(AccountManager manager) {
+        this.manager = manager;
     public double getBalance() {
         return balance;
+
     }
 }
