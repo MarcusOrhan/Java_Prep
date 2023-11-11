@@ -1,6 +1,6 @@
 package rapidIntrviewPrep;
 
-public class main {
+public class reversestring {
     public static void main(String[] args) {
         String text = "adida";
         StringBuffer sb= new StringBuffer(text);
