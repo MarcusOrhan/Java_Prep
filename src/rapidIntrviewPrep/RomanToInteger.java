@@ -21,14 +21,11 @@ public static int roman(String str){
     keysMap.put('M',1000);
 
     for (int i =0 ; i <str.length()-1; i++) {
-
         if (keysMap.get(str.charAt(i))>= keysMap.get(str.charAt(i+1)))
            result +=keysMap.get(str.charAt(i));
         else result -= keysMap.get(str.charAt(i));
-        result+= digit;
     }
-
-       return result += keysMap.get(str.charAt(str.length()-1));
+    return result + keysMap.get(str.charAt(str.length() - 1));
 }
 
 }
