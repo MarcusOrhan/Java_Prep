@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FreqOfChars {
-
     public static void main(String[] args) {
     String str = "aabcccdddaaaaac";
     //find  the occurances of chars output a6b1c4d2
