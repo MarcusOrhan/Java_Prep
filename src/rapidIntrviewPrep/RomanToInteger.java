@@ -20,15 +20,15 @@ public static int roman(String str){
     keysMap.put('D',500);
     keysMap.put('M',1000);
 
-    for (int i = str.length()-1; i < 0; i--) {
+    for (int i =0 ; i <str.length()-1; i++) {
 
-        if (keysMap.get(str.charAt(i))>= keysMap.get(str.charAt(i-1)))
-           digit +=keysMap.get(str.charAt(i)-keysMap.get(str.charAt(i-1)));
-        else digit = keysMap.get(str.charAt(i));
+        if (keysMap.get(str.charAt(i))>= keysMap.get(str.charAt(i+1)))
+           result +=keysMap.get(str.charAt(i));
+        else result -= keysMap.get(str.charAt(i));
         result+= digit;
     }
 
-       return result;
+       return result += keysMap.get(str.charAt(str.length()-1));
 }
 
 }
