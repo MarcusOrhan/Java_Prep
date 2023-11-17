@@ -10,7 +10,6 @@ public class RomanToInteger {
     }
 public static int roman(String str){
     int result = 0;
-    int digit = 0;
     Map<Character, Integer> keysMap = new HashMap<>();
     keysMap.put('I',1);
     keysMap.put('V',5);
