@@ -12,6 +12,9 @@ Output: "fl"
         String[] str = {"flower","flow","flight"};
         System.out.println("commonPrefix(str) = " + commonPrefix(str));
 
+
+
+
     }
     public static String commonPrefix(String[]str){
         String result = "";
