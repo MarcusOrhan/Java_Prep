@@ -20,9 +20,7 @@ Output: "fl"
                     result += str[0].substring(0,j);
                 else break;
             }
-            
         }
-
         return result;
     }
 }
