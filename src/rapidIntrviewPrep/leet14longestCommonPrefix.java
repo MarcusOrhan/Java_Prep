@@ -25,6 +25,9 @@ Output: "fl"
         return prefix;
     }
 
+
+
+// this solution is not completed
     public static String commonPrefix(String[]str){
         String result = "";
         for (int i = 0; i < str.length; i++) {
